@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-image: linear-gradient(45deg,#328f8a,#08ac4b);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.feedback-page {
+    background-color: white;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
+    padding: 35px 63px;
+}
+
+.form {
+    position: relative;
+}
+
+.feedback-header {
+    text-align: start;
+    margin-bottom: 20px;
+}
+
+.feedback-header p {
+    padding: 7px 0px;
+    text-align: start;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="website"],
+.feedback-form textarea {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: none;
+    background: rgb(236, 236, 236);
+    margin-top: 3px;
+}
+
+.feedback-form button {
+    background: linear-gradient(45deg,#328f8a,#08ac4b);
+    color: white;
+    border: none;
+    padding: 10px 0px;
+    font-weight: bold;
+    width: 90px;
+}
+
+.feedback-form label {
+    text-align: start;
+    font-size: 13px;
+}
+
+.call {
+    text-align: center;
+    font-weight: 300;
+    font-size: 13px;
+    color: white;
+    margin: 15px;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-group {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.input-group:last-child {
+    margin-right: 0;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 767px) {
+    .feedback-page {
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    .input-row {
+        flex-direction: column; 
+    }
+
+    .input-group {
+        width: 100%; 
+        margin-right: 0;
+    }
+
+    .input-group:nth-child(2) {
+        margin-top: 10px;
+    }
+}
